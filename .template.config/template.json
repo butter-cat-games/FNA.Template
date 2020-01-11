@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "butter-cat-games",
+  "classifications": [ "C#", "Console", "Game", "FNA" ],
+  "identity": "FNA.Template",
+  "name": "FNA Template",
+  "sourceName": "NewGame",
+  "preferNameDirectory": true,
+  "shortName": "fna",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "primaryOutputs": [
+    { "path": "NewGame.cs" },
+    { "path": "Program.cs" }
+  ]
+}

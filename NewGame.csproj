@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;FNA</DefineConstants>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>19.11.0</PackageVersion>
+    <PackageId>FNA.Template</PackageId>
+    <Title>FNA Template</Title>
+    <PackageTags>dotnet-new;templates;FNA;game</PackageTags>
+    <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <!--#if (false)-->
+  <ItemGroup>
+    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;**\.vs\**;*.user;*.sln" />
+  </ItemGroup>
+  <!--#endif-->
+
+  <ItemGroup>
+    <PackageReference Include="FNA.Package" Version="19.11.0-ps1" />
+  </ItemGroup>
+
+</Project>
